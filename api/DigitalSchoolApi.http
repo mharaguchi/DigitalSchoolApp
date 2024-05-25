@@ -1,0 +1,6 @@
+@DigitalSchoolApi_HostAddress = http://localhost:5137
+
+GET {{DigitalSchoolApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

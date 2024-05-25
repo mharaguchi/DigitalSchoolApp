@@ -1,0 +1,30 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres
+    shm_size: 128mb
+    environment:
+      POSTGRES_PASSWORD: example
+    ports:
+     - 5432:5432
+  adminer:
+    image: adminer
+    ports:
+     - 8080:8080
+  # tictactoeapi:
+  #   image: tictactoeapi
+  #   build:
+  #     context: .
+  #     dockerfile: api/src/TicTacToe.Api/Dockerfile
+  #   ports:
+  #     - "19350:19350"
+  web:
+    image: digitalschoolweb
+    build:
+      context: web
+      dockerfile: ./web/Dockerfile
+    environment:
+      NODE_ENV: production
+    ports:
+      - 4201:4200
