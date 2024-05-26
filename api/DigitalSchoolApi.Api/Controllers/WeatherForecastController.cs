@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using DigitalSchoolApi.Core;
+using DigitalSchoolApi.Core.Models;
 
 namespace DigitalSchoolApi.Controllers
 {
@@ -33,13 +34,11 @@ namespace DigitalSchoolApi.Controllers
             .ToArray();
         }
 
-        [HttpGet()]
+        [HttpGet]
         [Route("[action]")]
-        [ProducesResponseType(StatusCodes.Status200OK)]
-        [ProducesResponseType(StatusCodes.Status404NotFound)]
-        public string GetTestName()
+        public IActionResult GetTestName()
         {
-            return _manager.GetTestNameAsync().Result;
+            return Ok(_manager.GetTestNameAsync().Result);
         }
     }
 }
