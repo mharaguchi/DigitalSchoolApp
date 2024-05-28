@@ -1,7 +1,7 @@
 ﻿using DigitalSchoolApi.Core.Repositories;
 using Microsoft.Extensions.Logging;
 
-namespace DigitalSchoolApi.Core
+namespace DigitalSchoolApi.Core.Managers
 {
     public class DigitalSchoolApiManager(ILogger<DigitalSchoolApiManager> logger, IDigitalSchoolApiRepository repository) : IDigitalSchoolApiManager
     {

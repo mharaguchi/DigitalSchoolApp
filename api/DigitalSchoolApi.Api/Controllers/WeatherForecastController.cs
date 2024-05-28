@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
-using DigitalSchoolApi.Core;
 using DigitalSchoolApi.Core.Models;
+using DigitalSchoolApi.Core.Managers;
 
 namespace DigitalSchoolApi.Controllers
 {

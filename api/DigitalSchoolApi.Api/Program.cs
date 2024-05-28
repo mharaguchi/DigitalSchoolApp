@@ -1,4 +1,4 @@
-using DigitalSchoolApi.Core;
+using DigitalSchoolApi.Core.Managers;
 using DigitalSchoolApi.Core.Options;
 using DigitalSchoolApi.Core.Repositories;
 using DigitalSchoolApi.Data;

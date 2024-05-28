@@ -1,4 +1,4 @@
-﻿namespace DigitalSchoolApi.Core
+﻿namespace DigitalSchoolApi.Core.Managers
 {
     public interface IDigitalSchoolApiManager
     {
