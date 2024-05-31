@@ -1,3 +1,4 @@
+using DigitalSchoolApi.Api;
 using DigitalSchoolApi.Core.Managers;
 using DigitalSchoolApi.Core.Options;
 using DigitalSchoolApi.Core.Repositories;
@@ -42,5 +43,7 @@ app.UseCors();
 app.UseAuthorization();
 
 app.MapControllers();
+
+app.RunDatabaseMigrations<Program>();
 
 app.Run();
